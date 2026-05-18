@@ -1,15 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Currículum — Testimonios y ejemplos</title>
 </head>
-
 <body>
-    <h1> hello world </h1>
-    <h2>adiós :c</h2>
-</body>
+    <!-- Menú de navegación con referencia a los testimonios -->
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
+    <main>
+        <!-- Sección: Testimonios -->
+        <section id="testimonios" aria-labelledby="testimonios-title">
+            <h2 id="testimonios-title">Testimonios</h2>
+
+            <article class="testimonial" aria-labelledby="t1-author">
+                <blockquote>
+                    <p>"Trabajar con esta persona mejoró significativamente la calidad de nuestros lanzamientos."</p>
+                </blockquote>
+                <p id="t1-author"><strong>Ana García</strong>, Directora de Tecnología. Ana lideró el equipo técnico; colaboré en la arquitectura y entrega de sistemas críticos, manteniendo plazos y calidad.</p>
+            </article>
+
+            <article class="testimonial" aria-labelledby="t2-author">
+                <blockquote>
+                    <p>"Su enfoque proactivo y su comunicación clara marcaron la diferencia en el proyecto."</p>
+                </blockquote>
+                <p id="t2-author"><strong>Carlos Méndez</strong>, Gerente de Operaciones. Carlos supervisó la implementación operativa; trabajamos juntos para optimizar procesos y reducir tiempos de entrega.</p>
+            </article>
+
+            <article class="testimonial" aria-labelledby="t3-author">
+                <blockquote>
+                    <p>"Extremadamente confiable y orientado a resultados."</p>
+                </blockquote>
+                <p id="t3-author"><strong>Lucía Fernández</strong>, Jefa de Producto. Lucía y yo coordinamos roadmap y priorización; aporté soluciones que mejoraron la satisfacción del usuario y métricas clave.</p>
+            </article>
+        </section>
+
+        <!-- Sección: Ejemplos de etiquetas de texto semánticas -->
+        <section id="ejemplos-texto" aria-labelledby="texto-title">
+            <h2 id="texto-title">Ejemplos de etiquetas de texto</h2>
+
+            <!-- Párrafo con enlace -->
+            <p>Visita mi portafolio profesional en <a href="https://ejemplo.com" rel="noopener" target="_blank">ejemplo.com</a> para ver proyectos y detalles.</p>
+
+            <!-- Lista ordenada -->
+            <h3>Pasos principales</h3>
+            <ol>
+                <li>Definir requerimientos</li>
+                <li>Diseño y prototipado</li>
+                <li>Desarrollo e iteración</li>
+            </ol>
+
+            <!-- Lista no ordenada -->
+            <h3>Habilidades destacadas</h3>
+            <ul>
+                <li>Gestión de proyectos</li>
+                <li>Diseño de UX</li>
+                <li>Desarrollo full-stack</li>
+            </ul>
+
+            <!-- Tabla sin bordes; primera fila y primera columna con encabezados -->
+            <h3>Resumen</h3>
+            <table>
+                <tr>
+                    <th>Área</th>
+                    <th>Experiencia</th>
+                    <th>Nivel</th>
+                </tr>
+                <tr>
+                    <th scope="row">Frontend</th>
+                    <td>SPAs con frameworks modernos</td>
+                    <td>Avanzado</td>
+                </tr>
+                <tr>
+                    <th scope="row">Backend</th>
+                    <td>APIs REST/GraphQL</td>
+                    <td>Intermedio</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Sección: Multimedia -->
+        <section id="multimedia" aria-labelledby="multimedia-title">
+            <h2 id="multimedia-title">Recomendaciones de etiquetas multimedia</h2>
+
+            <!-- Mapa de Google Maps (embed) -->
+            <h3>Mapa</h3>
+            <div class="mapa" style="max-width:600px;">
+                <iframe
+                    src="https://www.google.com/maps?q=40.4168,-3.7038&z=15&output=embed"
+                    width="600"
+                    height="350"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    title="Ubicación (ejemplo)">
+                </iframe>
+            </div>
+
+            <!-- Imagen con placeholder (Picsum) -->
+            <h3>Imagen (placeholder)</h3>
+            <figure>
+                <img src="https://picsum.photos/seed/usuario/800/450" alt="Imagen de proyecto o retrato" width="800" height="450" />
+                <figcaption>Imagen de ejemplo (Picsum)</figcaption>
+            </figure>
+
+            <!-- Video de YouTube (embed + URL) -->
+            <h3>Video</h3>
+            <div class="video" style="max-width:640px;">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/ysz5S6PUM-U"
+                    title="Video de ejemplo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <!-- URL del video: https://www.youtube.com/watch?v=ysz5S6PUM-U -->
+        </section>
+
+        <!-- Sección: Formulario de contacto (sin usar <br>) -->
+        <section id="contacto" aria-labelledby="contacto-title">
+            <h2 id="contacto-title">Contacto</h2>
+            <form action="#contacto" method="post" aria-label="Formulario de contacto">
+                <!-- Texto en una línea -->
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" required />
+                </div>
+
+                <!-- Lista desplegable -->
+                <div>
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto">
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="contratacion">Contratación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <!-- Selección única (radio) -->
+                <fieldset>
+                    <legend>Método preferido de contacto</legend>
+                    <div>
+                        <input type="radio" id="contacto-email" name="metodo" value="email" checked />
+                        <label for="contacto-email">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contacto-telefono" name="metodo" value="telefono" />
+                        <label for="contacto-telefono">Teléfono</label>
+                    </div>
+                </fieldset>
+
+                <!-- Selección múltiple (checkboxes) -->
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <div>
+                        <input type="checkbox" id="interes1" name="intereses" value="proyecto" />
+                        <label for="interes1">Nuevo proyecto</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interes2" name="intereses" value="asesoria" />
+                        <label for="interes2">Asesoría</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interes3" name="intereses" value="otro" />
+                        <label for="interes3">Otro</label>
+                    </div>
+                </fieldset>
+
+                <!-- Área de texto -->
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6"></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
 </html>
