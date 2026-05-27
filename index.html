@@ -1,196 +1,321 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Currículum — Testimonios y ejemplos</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="CV, portfolio, estudiante, desarrollo web">
+    <meta name="description" content="Curriculum Vitae personal">
+    <meta name="author" content="Miguel Galarza">
+
+    <title>Curriculum Vitae | Miguel Galarza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Recursive&family=Sora:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/styles.css">
 
 </head>
+
 <body>
-    <h1> Miguel Galarza </h1>
-    <!-- Menú de navegación con referencia a los testimonios -->
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
-            <li><a href="#multimedia">Multimedia</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <div class="cv-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#education">Educación</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
 
-    <main>
-        <!-- Sección: Testimonios -->
-        <section id="testimonios" aria-labelledby="testimonios-title">
-            <h2 id="testimonios-title" class="subtitle">Testimonios</h2>
+            <div class="hero">
+                <img src="https://picsum.photos/250" alt="Foto de perfil">
+                <div>
+                    <h1>Miguel Galarza</h1>
+                    <p>
+                        Estudiante universitario interesado en
+                        desarrollo web y bases de datos.
+                    </p>
+                </div>
+            </div>
+        </header>
 
-            <article class="testimonial" aria-labelledby="t1-author">
-                <blockquote>
-                    <p>"Trabajar con esta persona mejoró significativamente la calidad de nuestros lanzamientos."</p>
-                </blockquote>
-                <p id="t1-author"><strong>Ana García</strong>, Directora de Tecnología. Ana lideró el equipo técnico; colaboré en la arquitectura y entrega de sistemas críticos, manteniendo plazos y calidad.</p>
-            </article>
+        <main>
+            <section id="about">
+                <h2>Sobre mí</h2>
+                <p>
+                    Me apasiona desarrollar soluciones tecnológicas eficientes y
+                    bien estructuradas. Me caracterizo por un enfoque analítico,
+                    buscando comprender a profundidad los problemas antes de proponer
+                    soluciones sólidas y funcionales. Mantengo una actitud de aprendizaje
+                    continuo y he fortalecido tanto mis habilidades técnicas como mi capacidad
+                    de comunicación y trabajo colaborativo.
+                    Visita mi
+                    <a href="https://github.com/MAGSelPad">
+                        GitHub
+                    </a>
+                </p>
+            </section>
 
-            <article class="testimonial" aria-labelledby="t2-author">
-                <blockquote>
-                    <p>"Su enfoque proactivo y su comunicación clara marcaron la diferencia en el proyecto."</p>
-                </blockquote>
-                <p id="t2-author"><strong>Carlos Méndez</strong>, Gerente de Operaciones. Carlos supervisó la implementación operativa; trabajamos juntos para optimizar procesos y reducir tiempos de entrega.</p>
-            </article>
+            <section id="education">
+                <h2>Educación</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nivel</th>
+                            <th>Institución Educativa</th>
+                            <th>Título Obtenido</th>
+                            <th>Duración</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Universidad</td>
+                            <td>Escuela Superior Politécnica del Litoral</td>
+                            <td>Ingeniero en Ciencias de la Computación</td>
+                            <td>2024-Actualidad</td>
+                        </tr>
 
-            <article class="testimonial" aria-labelledby="t3-author">
-                <blockquote>
-                    <p>"Extremadamente confiable y orientado a resultados."</p>
-                </blockquote>
-                <p id="t3-author"><strong>Lucía Fernández</strong>, Jefa de Producto. Lucía y yo coordinamos roadmap y priorización; aporté soluciones que mejoraron la satisfacción del usuario y métricas clave.</p>
-            </article>
-        </section>
+                        <tr>
+                            <td>Bachillerato</td>
+                            <td>Academia Naval Almirante Illingworth</td>
+                            <td>Bachiller Técnico Área Técnica Tics Informática</td>
+                            <td>2021-2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <!-- Sección: Ejemplos de etiquetas de texto semánticas -->
-        <section id="ejemplos-texto" aria-labelledby="texto-title">
-            <h2 id="texto-title">Ejemplos de etiquetas de texto</h2>
+            <section id="projects">
+                <h2>Proyectos</h2>
+                <ol>
+                    <li>
+                        <h3>Sistema de Gestión de Alertas y Emergencias Universitarias</h3>
+                        <p>
+                            Se diseñó una base de datos relacional capaz de gestionar el ciclo completo de incidentes
+                            universitarios garantizando integridad referencial, trazabilidad y automatización de reglas
+                            denegocio.
+                        </p>
+                    </li>
 
-            <!-- Párrafo con enlace -->
-            <p>Visita mi portafolio profesional en <a href="https://ejemplo.com" rel="noopener" target="_blank">ejemplo.com</a> para ver proyectos y detalles.</p>
+                    <li>
+                        <h3>FactCheck - Sistema de Gestión Sacramental Centrado en el Usuario</h3>
+                        <p>
+                            Se dio una solución tecnológica que digitalice la gestión de registros
+                            históricos sin comprometer la seguridad ni el valor patrimonial de los archivos
+                            físicos.
+                        </p>
+                    </li>
 
-            <!-- Lista ordenada -->
-            <h3>Pasos principales</h3>
-            <ol>
-                <li>Definir requerimientos</li>
-                <li>Diseño y prototipado</li>
-                <li>Desarrollo e iteración</li>
-            </ol>
+                    <li>
+                        <h3>WALL-E el Jardinero</h3>
+                        <p>
+                            Se llevó a cabo el diseño de un sistema automático de riego capaz de tomar decisiones
+                            basadas
+                            en humedad del suelo y detección de lluvia, optimizando consumo energético.
+                        </p>
+                        <iframe src="https://www.youtube.com/embed/fbGDeOgf2c4?si=4PA3eLI1TVE4tDBO"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </li>
+                </ol>
+            </section>
 
-            <!-- Lista no ordenada -->
-            <h3>Habilidades destacadas</h3>
-            <ul>
-                <li>Gestión de proyectos</li>
-                <li>Diseño de UX</li>
-                <li>Desarrollo full-stack</li>
-            </ul>
+            <section id="skills">
+                <div>
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>SQL</li>
+                        <li>HTML, CSS</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>Figma</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
 
-            <!-- Tabla sin bordes; primera fila y primera columna con encabezados -->
-            <h3>Resumen</h3>
-            <table>
-                <tr>
-                    <th>Área</th>
-                    <th>Experiencia</th>
-                    <th>Nivel</th>
-                </tr>
-                <tr>
-                    <th scope="row">Frontend</th>
-                    <td>SPAs con frameworks modernos</td>
-                    <td>Avanzado</td>
-                </tr>
-                <tr>
-                    <th scope="row">Backend</th>
-                    <td>APIs REST/GraphQL</td>
-                    <td>Intermedio</td>
-                </tr>
-            </table>
-        </section>
+                <div>
+                    <h2>Valores</h2>
+                    <ul>
+                        <li>Responsabilidad</li>
+                        <li>Honestidad</li>
+                        <li>Constancia</li>
+                        <li>Análisis Crítico</li>
+                        <li>Disposición de Ayuda</li>
+                        <li>Comunicación clara</li>
+                        <li>Compromiso</li>
+                        <li>Respeto</li>
+                        <li>Esfuerzo Personal</li>
+                    </ul>
+                </div>
 
-        <!-- Sección: Multimedia -->
-        <section id="multimedia" aria-labelledby="multimedia-title">
-            <h2 id="multimedia-title">Recomendaciones de etiquetas multimedia</h2>
+            </section>
 
-            <!-- Mapa de Google Maps (embed) -->
-            <h3>Mapa</h3>
-            <div class="mapa" style="max-width:600px;">
-                <iframe
-                    src="https://www.google.com/maps?q=40.4168,-3.7038&z=15&output=embed"
-                    width="600"
-                    height="350"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    title="Ubicación (ejemplo)">
+            <section id="presentation">
+                <h2>Video de presentación</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen>
                 </iframe>
+            </section>
+
+            <section id="testimonials">
+                <h2>Testimonios</h2>
+                <div class="testimonial-grid">
+                    <article class="testimonial-card">
+                        <blockquote>
+                            “Demostró una gran capacidad para organizar tareas y colaborar eficazmente durante el
+                            desarrollo del proyecto.”
+                        </blockquote>
+                        <p class="author">
+                            María Torres
+                        </p>
+                        <p class="role">
+                            Coordinadora de proyecto
+                        </p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <blockquote>
+                            “Destacó por su responsabilidad y disposición para investigar soluciones más allá de lo
+                            solicitado.”
+                        </blockquote>
+                        <p class="author">
+                            Juan Pérez
+                        </p>
+                        <p class="role">
+                            Supervisor académico
+                        </p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <blockquote>
+                            “Su enfoque analítico permitió mejorar significativamente la calidad y estructura del
+                            trabajo final.”
+                        </blockquote>
+                        <p class="author">
+                            Ana Vera
+                        </p>
+                        <p class="role">
+                            Mentora técnica
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="location">
+                <h2>Ubicación</h2>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1g-Cm4DY_9zRBLQ4HWvXILNET8F3n3g8&ehbc=2E312F">
+                </iframe>
+            </section>
+
+            <section id="contact">
+                <h2>Contáctame</h2>
+                <form action="#">
+                    <fieldset>
+                        <legend>Nombre</legend>
+                        <input type="text" name="nombre" placeholder="ej: Jane Doe" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Correo Electrónico</legend>
+                        <input type="email" name="email" placeholder="ej: user@correo.com" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Teléfono de Contacto</legend>
+                        <input type="tel" name="phone" placeholder="ej: 0991234567">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Área de interés</legend>
+                        <select name="interes">
+                            <option value="trabajo">Trabajo</option>
+                            <option value="proyecto">Proyecto</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Modalidad</legend>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="mode" value="presencial">
+                                Presencial
+                            </label>
+
+                            <label>
+                                <input type="radio" name="mode" value="virtual">
+                                Virtual
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Tecnologías</legend>
+                        <div class="options">
+                            <label><input type="checkbox" name="tech" value="html">HTML</label>
+                            <label><input type="checkbox" name="tech" value="css">CSS</label>
+                            <label><input type="checkbox" name="tech" value="python">Python</label>
+                            <label><input type="checkbox" name="tech" value="java">Java</label>
+                            <label><input type="checkbox" name="tech" value="otros">Otros</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Mensaje</legend>
+                        <textarea name="mensaje" placeholder="Proporcione más detalles de ser necesario..."></textarea>
+                    </fieldset>
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-contact">
+                <a href="mailto:miguel.ags1576@gmail.com" class="footer-item">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 5h16v14H4z" />
+                        <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                    <span>Correo</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/miguelgalarzasolis" target="_blank" class="footer-item" rel="noopener">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M4 4h4v16H4zm2-2a2 2 0 100 4 2 2 0 000-4zm6 6h4v2h.1c.6-1.2 2.1-2.5 4.4-2.5C23 7.5 24 9.1 24 12v8h-4v-7c0-1.7 0-3.8-2.3-3.8-2.3 0-2.7 1.8-2.7 3.7V20h-4z" />
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/MAGSelPad" target="_blank" class="footer-item" rel="noopener">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 .5a12 12 0 00-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.61-4.04-1.61-.54-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.74.08-.74 1.22.08 1.86 1.26 1.86 1.26 1.08 1.86 2.84 1.33 3.53 1.01.11-.79.42-1.33.77-1.64-2.67-.3-5.48-1.34-5.48-5.96 0-1.32.47-2.4 1.25-3.25-.13-.3-.54-1.52.12-3.17 0 0 1.02-.33 3.35 1.24a11.4 11.4 0 016.1 0c2.33-1.57 3.35-1.24 3.35-1.24.66 1.65.25 2.87.12 3.17.78.85 1.25 1.93 1.25 3.25 0 4.63-2.82 5.65-5.5 5.95.43.38.82 1.11.82 2.25v3.33c0 .32.21.7.83.58A12 12 0 0012 .5" />
+                    </svg>
+                    <span>GitHub</span>
+                </a>
             </div>
 
-            <!-- Imagen con placeholder (Picsum) -->
-            <h3>Imagen (placeholder)</h3>
-            <figure>
-                <img id="photo" src="https://picsum.photos/seed/usuario/800/450" alt="Imagen de proyecto o retrato" width="800" height="450" />
-                <figcaption>Imagen de ejemplo (Picsum)</figcaption>
-            </figure>
-
-            <!-- Video de YouTube (embed + URL) -->
-            <h3>Video</h3>
-            <div class="video" style="max-width:640px;">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/ysz5S6PUM-U"
-                    title="Video de ejemplo"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 Miguel Galarza
+                </p>
             </div>
-            <!-- URL del video: https://www.youtube.com/watch?v=ysz5S6PUM-U -->
-        </section>
-
-        <!-- Sección: Formulario de contacto (sin usar <br>) -->
-        <section id="contacto" aria-labelledby="contacto-title">
-            <h2 id="contacto-title">Contacto</h2>
-            <form action="#contacto" method="post" aria-label="Formulario de contacto">
-                <!-- Texto en una línea -->
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" name="nombre" type="text" required />
-                </div>
-
-                <!-- Lista desplegable -->
-                <div>
-                    <label for="asunto">Asunto</label>
-                    <select id="asunto" name="asunto">
-                        <option value="colaboracion">Colaboración</option>
-                        <option value="contratacion">Contratación</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-
-                <!-- Selección única (radio) -->
-                <fieldset>
-                    <legend>Método preferido de contacto</legend>
-                    <div>
-                        <input type="radio" id="contacto-email" name="metodo" value="email" checked />
-                        <label for="contacto-email">Email</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="contacto-telefono" name="metodo" value="telefono" />
-                        <label for="contacto-telefono">Teléfono</label>
-                    </div>
-                </fieldset>
-
-                <!-- Selección múltiple (checkboxes) -->
-                <fieldset>
-                    <legend>Intereses</legend>
-                    <div>
-                        <input type="checkbox" id="interes1" name="intereses" value="proyecto" />
-                        <label for="interes1">Nuevo proyecto</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="interes2" name="intereses" value="asesoria" />
-                        <label for="interes2">Asesoría</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="interes3" name="intereses" value="otro" />
-                        <label for="interes3">Otro</label>
-                    </div>
-                </fieldset>
-
-                <!-- Área de texto -->
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="6"></textarea>
-                </div>
-
-                <!-- Botón de envío -->
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </section>
-    </main>
+        </footer>
+    </div>
 </body>
+
 </html>
